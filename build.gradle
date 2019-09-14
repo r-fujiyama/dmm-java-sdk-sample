@@ -1,0 +1,15 @@
+plugins {
+  id 'java'
+}
+
+repositories {
+  mavenCentral()
+  maven {
+    url 'https://r-fujiyama.github.io/maven-repository'
+  }
+}
+
+dependencies {
+  implementation group: 'com.sdk.java.dmm', name: 'dmm-java-sdk', version: '1.0.0'
+  implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.28'
+}
